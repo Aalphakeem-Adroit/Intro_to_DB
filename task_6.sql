@@ -12,7 +12,7 @@ INSERT INTO customers (
     address
 ) VALUES (
     2,
-    "Blessign Malik",
+    "Blessing Malik",
     "bmalik@sandtech.com",
     "124 Happiness Ave."
 ), (
