@@ -6,7 +6,7 @@ USE alx_book_store;
 
 -- Creating Books Table
 CREATE TABLE Books (
-    book_id PRIMARY KEY,
+    book_id INT PRIMARY KEY,
     title VARCHAR(50),
     FOREIGN_KEY (author_id) REFERENCES Authors(author_id),
     price DOUBLE,
@@ -21,7 +21,7 @@ CREATE TABLE Authors (
 
 -- Creating Customers Table
 CREATE TABLE Customers (
-    customer_id PRIMARY KEY,
+    customer_id INT PRIMARY KEY,
     customer_name VARCHAR(215),
     email VARCHAR(215),
     address TEXT
@@ -29,7 +29,7 @@ CREATE TABLE Customers (
 
 -- Creating Orders Table
 CREATE TABLE Orders (
-    order_id PRIMARY KEY,
+    order_id INT PRIMARY KEY,
     FOREIGN_KEY (customer_id) REFERENCES Customers(customer_id),
     order_date DATE
 )
