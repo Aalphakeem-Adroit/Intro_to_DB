@@ -5,7 +5,7 @@ CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 
 -- Inserting Multiple Data Into Customer Table
-INSERT INTO customers (
+INSERT INTO Customers (
     customer_id,
     customer_name,
     email,
