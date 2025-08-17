@@ -9,13 +9,13 @@ try:
     mydb = mysql.connector.connect(
         host=os.getenv("DB_HOST"),
         user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSKEY")  # intentionally wrong
+        password=os.getenv("DB_PASSKEY")
     )
 
     if mydb.is_connected():
         print("✅ Connected to the database successfully")
 
-except Error as e:
+except mysql.connector.Error as e:
     print("❌ Error while connecting to MySQL:", e)
 
 finally:
