@@ -26,3 +26,10 @@ CREATE TABLE Customers (
     email VARCHAR(215),
     address TEXT
 )
+
+-- Creating Orders Table
+CREATE TABLE Orders (
+    order_id PRIMARY KEY,
+    FOREIGN_KEY (customer_id) REFERENCE Customers(customer_id),
+    order_date DATE
+)
