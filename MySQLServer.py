@@ -7,11 +7,12 @@ load_dotenv()
 mydb = mysql.connector.connect(
     host=os.getenv("DB_HOST"),
     user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSKEY"),
-    database=os.getenv("DB_NAME")
+    password=os.getenv("DB_PASSKEY")
 )
 
 mycursor = mydb.cursor()
+mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+print("Database 'alx_book_store' created successfully.")
 
 
 
