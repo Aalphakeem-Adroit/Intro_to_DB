@@ -12,3 +12,9 @@ CREATE TABLE Books (
     price DOUBLE,
     publication_date DATE
 )
+
+-- Creating Authors Table
+CREATE TABLE Authors (
+    author_id PRIMARY KEY,
+    author_name VARCHAR(215)
+)
